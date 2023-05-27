@@ -1,6 +1,6 @@
 # Fullstack MongoDB, Express.js, React.js y Node.js - Blog
 
-Este proyecto es una aplicación de blog Fullstack construida desde cero utilizando MongoDB, Express.js, React.js y Node.js. La aplicación permite a los usuarios registrarse, iniciar sesión y publicar entradas de blog, así como ver y comentar las publicaciones de otros usuarios furro-blog.netlify.app/
+Este proyecto es una aplicación de blog Fullstack construida desde cero utilizando MongoDB, Express.js, React.js y Node.js. La aplicación permite a los usuarios registrarse, iniciar sesión y publicar entradas de blog, así como ver y comentar las publicaciones de otros usuarios [furro-blog.netlify.app/](https://furro-blog.netlify.app/)
 
 ## Instalación y configuración
 
