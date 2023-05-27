@@ -95,7 +95,7 @@ export const PostPage = () => {
             >
               {post?.imgUrl && (
                 <img
-                  src={`${process.env.REACT_APP_SERVER_URL}/${post.imgUrl}`}
+                  src={`${process.env.REACT_APP_SERVER_URL}/uploads/${post.imgUrl}`}
                   alt="img"
                   className="object-cover w-full"
                 />
