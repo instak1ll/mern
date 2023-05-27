@@ -77,20 +77,21 @@ export const PostPage = () => {
       <div className="text-xl text-center text-white py-10">Cargando...</div>
     );
   }
+
   return (
-    <div>
+    <div className="m-4">
       <button className="flex justify-center items-center bg-gray-600 text-xs text-white rounded-sm py-2 px-4">
         <Link className="flex" to={"/"}>
           Atrás
         </Link>
       </button>
 
-      <div className="flex gap-10 py-8">
-        <div className="w-2/3">
+      <div className="flex flex-col sm:flex-row gap-10 py-8">
+        <div className="w-full sm:w-2/3">
           <div className="flex flex-col basis-1/4 flex-grow">
             <div
               className={
-                post?.imgUrl ? "flex rouded-sm h-80" : "flex rounded-sm"
+                post?.imgUrl ? "flex rounded-sm h-80" : "flex rounded-sm"
               }
             >
               {post?.imgUrl && (
@@ -139,7 +140,7 @@ export const PostPage = () => {
             )}
           </div>
         </div>
-        <div className="w-1/3 p-8 bg-gray-700 flex flex-col gap-2 rounded-sm">
+        <div className="w-full sm:w-1/3 p-8 bg-gray-700 flex flex-col gap-2 rounded-sm">
           <form className="flex gap-2" onSubmit={(e) => e.preventDefault()}>
             <input
               type="text"

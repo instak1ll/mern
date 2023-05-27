@@ -24,19 +24,23 @@ export const MainPage = () => {
   }
 
   return (
-    <div className="max-w-[900px] mx-auto py-10">
-      <div className="flex justify-between gap-8">
-        <div className="flex flex-col gap-10 basis-4/5">
+    <div className="max-w-[900px] mx-auto py-10 p-4">
+      <div className="flex flex-col gap-10 sm:flex-row sm:justify-between sm:gap-8">
+        <div className="flex flex-col gap-10">
           {posts?.map((post, idx) => (
             <PostItem key={idx} post={post} />
           ))}
         </div>
-        <div className="basis-1/5">
-          <div className="text-xs uppercase text-white">Populares:</div>
+        <div className="mt-10 sm:mt-0">
+          <div className="text-xs uppercase text-white hidden sm:block">
+            Populares:
+          </div>
 
-          {popularPosts?.map((post, idx) => (
-            <PopularPosts key={idx} post={post} />
-          ))}
+          <div className="hidden sm:block">
+            {popularPosts?.map((post, idx) => (
+              <PopularPosts key={idx} post={post} />
+            ))}
+          </div>
         </div>
       </div>
     </div>
