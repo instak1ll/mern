@@ -62,7 +62,7 @@ export const EditPostPage = () => {
       <div className="flex object-cover py-2">
         {oldImage && (
           <img
-            src={`${process.env.REACT_APP_SERVER_URL}/${post.imgUrl}`}
+            src={`${process.env.REACT_APP_SERVER_URL}/${oldImage}`}
             alt={oldImage.name}
           />
         )}
